@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(2, 0, 36, 1) 11%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: cursive;
+}
+.buttonHeader {
+  margin-right: 8px;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.ladevs {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 55px;
+}
+.buttonHeader:hover {
+  border-color: rgb(0, 191, 255);
+}
+.Suporte {
+  border-width: 1px;
+  margin-right: 15px;
+  font-size: 10px;
+  padding: 4px 7px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Suporte:hover {
+  border-color: #00bfff;
+}
+.Busca {
+  color: white;
+  border-width: 1px;
+  margin-right: 6px;
+  background-color: transparent;
+  border-style: inset;
+}
+.imgPerfil {
+  background-color: black;
+  width: 15px;
+}
+body {
+  padding-top: 80px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("https://wallpapercave.com/wp/wp4870590.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.main {
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  gap: 10px 15px;
+  grid-template-areas:
+    "item1 item1 itemImg itemImg"
+    "itemC1 itemC2 itemC3 itemC4"
+    "item2 item2 item2 item2"
+    "item3 item4 item5 item6"
+    "linux linux linux linux";
+}
+.item {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    211deg,
+    rgba(2, 0, 36, 0.4206932773109243) 0%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  padding: 20px;
+  margin-right: 50px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.tool {
+  padding-top: 28px;
+  width: 50px;
+}
+
+.item1 {
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  grid-area: item1;
+  cursor: default;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    211deg,
+    rgba(2, 0, 36, 0.4206932773109243) 0%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+.itemImg {
+  grid-area: itemImg;
+}
+.img1 {
+  border-radius: 15px;
+  width: 655px;
+}
+
+.itemC1 {
+  text-align: center;
+  background-color: rgba(2, 0, 36, 1);
+  grid-area: itemC1;
+}
+.itemC1:hover {
+  border-color: #00bfff;
+}
+
+.itemC2 {
+  text-align: center;
+  background-color: rgba(2, 0, 36, 1);
+  grid-area: itemC2;
+}
+.itemC2:hover {
+  border-color: #00bfff;
+}
+
+.itemC3 {
+  text-align: center;
+  background-color: rgba(2, 0, 36, 1);
+  grid-area: itemC3;
+}
+.itemC3:hover {
+  border-color: #00bfff;
+}
+
+.itemC4 {
+  text-align: center;
+  background-color: rgba(2, 0, 36, 1);
+  grid-area: itemC4;
+}
+.itemC4:hover {
+  border-color: #00bfff;
+}
+
+.item2 {
+  margin-top: 60px;
+  grid-area: item2;
+}
+.cursos {
+  margin: auto;
+  padding: auto;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+}
+.item3 {
+  grid-area: item3;
+}
+.item3:hover {
+  border-color: #00bfff;
+}
+.item4 {
+  grid-area: item4;
+}
+.item4:hover {
+  border-color: #00bfff;
+}
+.item5 {
+  grid-area: item5;
+}
+.item5:hover {
+  border-color: #00bfff;
+}
+
+.item6 {
+  grid-area: item6;
+}
+.item6:hover {
+  border-color: #00bfff;
+}
+
+.linux {
+  grid-area: linux;
+  padding-top: 60px;
+}
+
+.footer {
+  flex-basis: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  text-decoration: solid;
+  justify-content: space-between;
+  background-color: rgb(2, 0, 36);
+  bottom: 0;
+  width: 100%;
+}
+.footerA {
+  color: white;
+}
