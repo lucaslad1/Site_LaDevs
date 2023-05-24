@@ -140,6 +140,9 @@ h3 {
 h3 {
   text-align: center;
 }
+.explicacao {
+  margin-left: 20px;
+}
 strong {
   color: orange;
 }

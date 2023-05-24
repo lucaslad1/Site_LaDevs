@@ -120,15 +120,20 @@
           </ol>
         </div>
         <br />
+        <br />
+        <hr />
+        <br />
 
         <h3>1. Comando pwd</h3>
         <br />
+        <br />
 
         <p>
-          Use o comando pwd para encontrar o caminho para o diretório atual (da
-          pasta) em que você está. O comando vai retornar um caminho completo
-          (cheio), que é basicamente um caminho que começa com uma barra
-          inclinada (/). Um exemplo de um caminho completo é /home/username.
+          Use o comando <strong>pwd</strong> para encontrar o caminho para o
+          diretório atual (da pasta) em que você está. O comando vai retornar um
+          caminho completo (cheio), que é basicamente um caminho que começa com
+          uma barra inclinada <strong>(/)</strong>. Um exemplo de um caminho
+          completo é <strong>/home/username</strong>.
         </p>
         <br />
         <p>O comando <strong>pwd</strong> usa a seguinte sintaxe:</p>
@@ -138,32 +143,311 @@
         <p>Ele tem a opção aceitável:</p>
         <br />
         <p>
+          <div class="explicacao">
+            <ul>
+              <li>
           <strong>-L</strong> ou <strong>-logical</strong> imprime o conteúdo da
           variável de ambiente, incluindo links simbólicos.
+          </li>
+          </ul>
+          </div>
         </p>
         <br />
         <br />
         <br />
-        <h3>2. Comando pwd</h3>
+        <hr />
         <br />
 
-        <p>
-          Use o comando pwd para encontrar o caminho para o diretório atual (da
-          pasta) em que você está. O comando vai retornar um caminho completo
-          (cheio), que é basicamente um caminho que começa com uma barra
-          inclinada (/). Um exemplo de um caminho completo é /home/username.
-        </p>
+        <h3>2. Comando cd</h3>
         <br />
-        <p>O comando <strong>pwd</strong> usa a seguinte sintaxe:</p>
-        <br />
-        <p><strong>pwd</strong> [opção]</p>
-        <br />
-        <p>Ele tem a opção aceitável:</p>
         <br />
         <p>
-          <strong>-L</strong> ou <strong>-logical</strong> imprime o conteúdo da
-          variável de ambiente, incluindo links simbólicos.
+          Para navegar pelos arquivos e diretórios Linux, use o comando
+          <strong>cd</strong>. Ele requer ou um caminho completo ou o nome de um
+          diretório, dependendo do diretório atual em que você estiver.
         </p>
+        <br />
+        <p>
+          Vamos dizer que você esteja em
+          <strong>/home/username/Documents</strong> e quer ir para
+          <strong>Photos</strong>, um subdiretório de Documents. Para fazer
+          isso, simplesmente digite <strong>cd Photos</strong>.
+        </p>
+        <br />
+        <p>
+          Outro cenário em que você quer mudar completamente de diretório,
+          digamos, para <strong>/home/username/Movies</strong>. Nesse caso, você
+          tem que digitar <strong>cd</strong> seguido pelo caminho absoluto do
+          diretório.
+        </p>
+        <br />
+        <p>
+          Existem alguns atalhos que você pode usar para navegar mais
+          rapidamente:
+        </p>
+        <br />
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                Use <strong>cd</strong> .. (com dois pontos seguidos) para subir
+                diretório acima.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                Use <strong>cd ~[username]</strong> para acessar o diretório
+                inicial de outro usuário.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                Use <strong>cd-</strong> (com um hífen) para mover para os
+                diretórios anteriores.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <h3>3. Comando ls</h3>
+        <br />
+        <br />
+        <p>
+          O comando <strong>ls</strong> é usado para visualizar conteúdos em um
+          diretório. Por padrão, esse comando vai mostrar os conteúdos apenas do
+          diretório atual em que você estiver.
+        </p>
+        <br />
+        <p>
+          Se você quiser ver o conteúdo de outros diretórios, digite
+          <strong>ls</strong> e, então, o caminho do diretório. Por exemplo,
+          digite <strong>ls</strong>
+          <strong>/home/username/Documents</strong> para ver os conteúdos de
+          <strong>Documents</strong>.
+        </p>
+        <br />
+        <p>
+          Existem variações que você pode usar com o comando
+          <strong>ls</strong>:
+        </p>
+        <br />
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <strong>ls -R</strong> vai listar todos os arquivos nos
+                subdiretórios.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                <strong>ls -a</strong> vai mostrar todos os arquivos ocultos.
+              </p>
+            </li>
+            <br />
+
+            <li>
+              <p>
+                <strong>ls -lh</strong> vai listar todos os tamanhos de arquivos
+                em formatos fáceis, como MB, GB ou TB.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <h3>4. Comando cat</h3>
+        <br />
+        <br />
+        <p>
+          O <strong>cat</strong> (abreviação para concatenar) é um dos comandos Linux mais usados. Ele é usado para visualizar, criar e relacionar arquivos. Para executar esse comando, digite <strong>cat</strong> seguido pelo nome do arquivo e sua extensão. Por exemplo: <strong>cat nomedoarquivo.txt</strong>.
+        </p>
+        <br />
+        <p>
+          Aqui estão outras maneiras de usar o comando <strong>cat</strong>:
+        </p>
+        
+        <br />
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <strong>cat > nomedoarquivo.txt</strong> cria um novo arquivo.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                <strong>cat nomedoarquivo1.txt nomedoarquivo2.txt > nomedoarquivo3.txt</strong> junta dois arquivos (1 e 2) em um novo (3).
+              </p>
+            </li>
+            <br />
+
+            <li>
+              <p>
+                <strong>tac nomedoarquivo.txt</strong> exibe o conteúdo do arquivo em ordem reversa.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <h3>5. Comando cp</h3>
+        <br />
+        <br />
+        <p>
+          Use o comando <strong>cp</strong> para copiar arquivos ou diretórios e seu conteúdo. Abaixo, listamos alguns exemplos.        </p>
+        <br />
+        <p>
+          Para copiar um arquivo do diretório atual para outro, digite <strong>cp</strong> seguido do nome do arquivo e do diretório de destino. Por exemplo:       
+        </p>
+        
+        <p><strong>cp nomedoarquivo.txt /home/username/Documents</strong></p>
+        <br>
+        <br>
+        <p>Para copiar arquivos para um diretório, digite os nomes dos arquivos seguidos do diretório de destino:</p>
+        
+        <p><strong>cp nomedoarquivo1.txt nomedoarquivo2.txt nomedoarquivo3.txt /home/username/Documents</strong></p>
+        <br>
+        <br>
+        <p>Para copiar o conteúdo de um arquivo para um novo arquivo no mesmo diretório, digite <strong>cp</strong> seguido do arquivo de origem e do arquivo de destino:</p>
+        
+        <p><strong>cp nomedoarquivo1.txt nomedoarquivo2.txt</strong></p>
+        <br>
+        <br>
+        <p>Para copiar um diretório inteiro, passe o sinalizador <strong>-R</strong> antes de digitar o diretório de origem, seguido pelo diretório de destino:</p>
+        
+        <p><strong>cp -R /home/username/Documents /home/username/Documents_backup</strong></p>
+
+        
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <h3>6. Comando mv</h3>
+        <br />
+        <br />
+        <p>
+          O uso mais comum do comando <strong>mv</strong> é mover arquivos, mas ele também pode ser usado para renomear arquivos.        <br />
+        <p>
+          Basta digitar <strong>mv</strong> seguido do nome do arquivo e do diretório de destino. Por exemplo, você deseja mover o arquivo <strong>nomedoarquivo.txt</strong> para o diretório <strong>/home/username/Documents</strong>:        
+        </p>
+        <p><strong>mv nomedoarquivo.txt /home/username/Documents</strong></p>
+        <br>
+        <br>
+        <p>Você também pode usar o comando mv para renomear um arquivo:</p>
+        
+        <p><strong>mv nomedoarquivo_antigo.txt nome_novo.txt</strong></p>
+        
+        <br />
+        <br />
+        <hr />
+        <br />
+
+        <h3>7. Comando mkdir</h3>
+        <br />
+        <br />
+        <p>
+          Use o comando <strong>mkdir</strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles. O usuário que executa esse comando deve ter o privilégio de criar uma nova pasta no diretório principal, caso contrário, poderá receber um erro de permissão negada.
+        </p>
+        <br />
+        <p>
+          Aqui está a sintaxe básica:
+        </p>
+        <p>
+          <strong>mkdir [opção] nome_do_diretório</strong>:
+        </p>
+        <br />
+        <br>
+        <p>Por exemplo, você deseja criar um diretório chamado <strong>Music</strong>:</p>
+        <p><strong>mkdir Music</strong></p>
+        <br>
+        <br>
+        <p>O comando <strong>mkdir</strong> aceita muitas opções, como:</p>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+               <strong>-p</strong> ou <strong>-parents</strong> cria um diretório entre duas pastas existentes. Por exemplo, <strong>mkdir -p Musci/2020/Songs</strong> criará o novo diretório “2020”.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                <strong>m</strong> -m define as permissões do arquivo. Por exemplo, para criar um diretório com permissões completas de leitura, gravação e execução para todos os usuários, digite <strong>mkdir -m777 nome_do_diretório</strong>.
+              </p>
+            </li>
+            <br />
+
+            <li>
+              <p>
+                <strong>-v</strong> imprime uma mensagem para cada diretório criado.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+        <h3>8. Comando rm</h3>
+        <br />
+        <br />
+        <p>
+          O comando <strong>rm</strong> é usado para excluir arquivos em um diretório. Certifique-se de que o usuário que executa esse comando tenha permissões de gravação.        </p>
+        <br />
+        <p>
+          Lembre-se do local do diretório, pois isso apagará o(s) arquivo(s) permanentemente e não há como desfazer a ação.        </p>
+       <br>
+        <p>Aqui está a sintaxe geral:</p>
+        <p>
+        <strong>mkdir [opção] nome_do_diretório</strong>:
+        </p>
+        <br />
+        <br>
+        <p>Por exemplo, você deseja criar um diretório chamado <strong>Music</strong>:</p>
+        <p><strong>mkdir Music</strong></p>
+        <br>
+        <br>
+        <p>O comando <strong>mkdir</strong> aceita muitas opções, como:</p>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+               <strong>-p</strong> ou <strong>-parents</strong> cria um diretório entre duas pastas existentes. Por exemplo, <strong>mkdir -p Musci/2020/Songs</strong> criará o novo diretório “2020”.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                <strong>m</strong> -m define as permissões do arquivo. Por exemplo, para criar um diretório com permissões completas de leitura, gravação e execução para todos os usuários, digite <strong>mkdir -m777 nome_do_diretório</strong>.
+              </p>
+            </li>
+            <br />
+
+            <li>
+              <p>
+                <strong>-v</strong> imprime uma mensagem para cada diretório criado.
+              </p>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
