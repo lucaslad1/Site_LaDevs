@@ -124,9 +124,6 @@ body {
 h3 {
   margin-top: 20px;
 }
-.lista {
-  margin-left: 12px;
-}
 .item1 {
   font-size: 20px;
   border-radius: 15px;
@@ -137,7 +134,18 @@ h3 {
   grid-area: item1;
   cursor: default;
 }
-
+.img1 {
+  width: 400px;
+}
+h3 {
+  text-align: center;
+}
+strong {
+  color: orange;
+}
+.lista {
+  margin-left: 30px;
+}
 .footer {
   flex-basis: 100%;
   padding: 10px;
