@@ -146,6 +146,11 @@ strong {
 .lista {
   margin-left: 30px;
 }
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 auto;
+}
 .footer {
   flex-basis: 100%;
   padding: 10px;
