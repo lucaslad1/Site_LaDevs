@@ -76,7 +76,7 @@
         <br />
         <br />
         <p>
-          Confira abaixo uma lista com os 9 comandos mais usados nos sistemas
+          Confira abaixo uma lista com os 16 comandos mais usados nos sistemas
           operacionais baseados em Linux:
         </p>
 
@@ -479,8 +479,9 @@
         <p>Por exemplo, você deseja criar um diretório chamado <strong>Music</strong>:</p>
         <p><strong>mkdir Music</strong></p>
         <br>
-        <br>
+        
         <p>O comando <strong>mkdir</strong> aceita muitas opções, como:</p>
+        <br>
         <div class="explicacao">
           <ul>
             <li>
@@ -554,6 +555,234 @@
             </li>
           </ul>
         </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>11. Comando touch</h3>
+        <br />
+        <br />
+        <p>
+          O comando <strong>touch</strong> permite criar um arquivo vazio ou gerar e modificar um registro de data e hora na linha de comando do Linux.        <p>
+          <br>
+        <p>Por exemplo, digite o seguinte comando para criar um arquivo HTML chamado <strong>Web</strong> no diretório <strong>Documents</strong>:</p>
+        <p>
+        <strong>touch /home/username/Documents/Web.html</strong>:
+        </p>
+        <br />
+    
+        
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>12. Comando chmod</h3>
+        <br />
+        <br />
+        <p>
+          O chmod é um comando que modifica as permissões de leitura, gravação e execução de um arquivo ou diretório. No Linux, cada arquivo está associado a três classes de usuários: <strong>proprietário</strong>, <strong>membro do grupo</strong> e <strong>outros</strong>.        
+          <p>
+          <br>
+        <p>Aqui está a sintaxe básica:</p>
+    
+        <p>
+        <strong>chmod [opção] [permissão] [nome_do_arquivo]</strong>
+        </p>
+        <br />
+    
+        <p>Por exemplo, o proprietário é atualmente o único com permissões totais para alterar o arquivo <strong>note.txt</strong>. Para permitir que os membros do grupo e outros possam ler, gravar e executar o arquivo, altere-o para o tipo de permissão <strong>-rwxrwxrwx</strong>, cujo valor numérico é <strong>777</strong>:</p>
+        <p><strong>chmod 777 note.txt</strong></p>
+        <br>
+        <p>O comando <strong>chmod</strong> oferece suporte a várias opções, incluindo:</p>
+        <br>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <p><strong>-c</strong> ou <strong>–changes</strong> exibe informações quando uma alteração é feita.</p>
+              </p>
+            </li>
+            <br />
+            <li>
+                <p><strong>-f</strong> ou <strong>–silent</strong> suprime as mensagens de erro.</p>
+            </li>
+            <br />
+            <li>
+              <p>
+               <strong>-v</strong> ou <strong>–verbose</strong> exibe um diagnóstico para cada arquivo processado.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>13. Comando apt-get</h3>
+        <br />
+        <br />
+        <p>
+          O <strong>apt-get</strong> é uma ferramenta de linha de comando para lidar com as bibliotecas da Advanced Package Tool (APT) no Linux. Ele permite que você obtenha informações e pacotes de fontes autenticadas para gerenciar, atualizar, remover e instalar softwares e suas dependências.          </p>
+          <br>
+        <p>A execução do comando <strong>pt-get</strong> exige que você tenha privilégios <strong>sudo</strong> ou root.
+          <br>
+          <br>
+        </p>
+        <p>Aqui está a sintaxe principal:</p>
+        
+        <p>
+        <strong>apt-get [opções] (comando)</strong>
+        </p>
+        <br />
+    
+        <p>Esses são os comandos mais comuns que você pode adicionar ao <strong>apt-get</strong>:</p>
+        <br>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <p><strong>update</strong> sincroniza os arquivos de pacote de suas fontes.</p>
+              </p>
+            </li>
+            <br />
+            <li>
+                <p><strong>upgrade</strong> instala a versão mais recente de todos os pacotes instalados.</p>
+            </li>
+            <br />
+            <li>
+              <p>
+               <strong>check</strong> atualiza o cache de pacotes e verifica dependências quebradas.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+        <h3>14. Comando nano</h3>
+        <br />
+        <br />
+        <p>
+          O Linux permite que os usuários editem e gerenciem arquivos por meio de um editor de texto usando comandos como o nano. O nano é nativo do sistema operacional.        
+        </p> 
+           <br>
+           <p>O comando nano denota palavras-chave e pode funcionar com a maioria dos idiomas. Para usá-lo, digite o seguinte comando:</p>
+        <p>
+        <strong>nano [nome do arquivo]</strong>
+        </p>
+       
+    
+      
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>15. Comando su</h3>
+        <br />
+        <br />
+        <p>
+          O comando switch user, ou <strong>su</strong>, permite executar um programa como um usuário diferente. Ele altera a conta administrativa na sessão de login atual. Esse comando é especialmente útil para acessar o sistema por meio de SSH ou usar o gerenciador de exibição da GUI quando o usuário raiz não está disponível.          
+          <br>
+          <br>
+        <p>A execução do comando <strong>pt-get</strong> exige que você tenha privilégios <strong>sudo</strong> ou root.
+          <br>
+          <br>
+          
+        </p>
+        <p>Esta é a sintaxe geral do comando:</p>
+        
+        <p>
+        <strong>su [opções] [nome de usuário [argumento]]</strong>
+        </p>
+        <br />
+    
+        <p>Quando executado sem nenhuma opção ou argumento, o comando <strong>su</strong> é executado com privilégios de root. Ele solicitará que você se autentique e use os privilégios <strong>sudo</strong> temporariamente.</p>
+        <br>
+        <p>Aqui estão algumas que você pode usar:</p>
+        <br>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <p><strong>-p</strong> ou <strong>-preserve-environment</strong> mantém o mesmo ambiente de shell, composto por HOME, SHELL, USER e LOGNAME.</p>
+              </p>
+            </li>
+            <br />
+            <li>
+                <p><strong>-s</strong> ou <strong>-shell</strong> permite especificar um ambiente de shell diferente para execução.</p>
+            </li>
+            <br />
+            <li>
+              <p>
+               <strong>-l</strong> ou <strong>–login</strong> executa um script de login para mudar para um nome de usuário diferente. Para executá-lo, é necessário digitar a senha do usuário.
+              </p>
+            </li>
+          </ul>
+        </div> 
+
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>16. Comando uname</h3>
+        <br />
+        <br />
+        <p>
+          O comando <strong>uname</strong>, que significa Unix Name, vai mostrar informações detalhadas sobre seu sistema Linux. Isso inclui o nome da máquina, do sistema operacional, do kernel e assim por diante.
+        </p>          
+        <br>
+
+        <p>
+        <strong>uname [opção]</strong>
+        </p>
+        <br />
+    
+        <p>Essas são algumas das opções que você pode usar:</p>
+        <br>
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <p><strong>-a</strong> exibe todas as informações do sistema.</p>
+              </p>
+            </li>
+            <br />
+            <li>
+                <p><strong>-s</strong> exibe o nome do kernel.</p>
+            </li>
+            <br />
+            <li>
+              <p>
+               <strong>-n</strong> exibe o hostname do node do sistema.
+              </p>
+            </li>
+          </ul>
+        </div> 
 
       </div>
     </section>
