@@ -66,3 +66,7 @@ h2 {
 .footerA {
   color: white;
 }
+
+.item1 input{
+  padding: 5px 10px;
+}
