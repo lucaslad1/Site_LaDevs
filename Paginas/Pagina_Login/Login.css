@@ -22,8 +22,9 @@
 }
 .logo {
   display: flex;
-  align-items: center;
   font-family: cursive;
+  color: white;
+  text-decoration: none;
 }
 .buttonHeader {
   margin-right: 8px;

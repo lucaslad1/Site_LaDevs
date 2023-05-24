@@ -22,7 +22,6 @@
 }
 .logo {
   display: flex;
-  align-items: center;
   font-family: cursive;
 }
 .buttonHeader {
@@ -97,8 +96,9 @@ body {
     "item1 item1 itemImg itemImg"
     "itemC1 itemC2 itemC3 itemC4"
     "item2 item2 item2 item2"
-    "item3 item4 item5 item6"
-    "linux linux linux linux";
+    "itemli itemli itemli itemli"
+    "linux linux linux linux"
+    "item3 item4 item5 item6";
 }
 .item {
   background: rgb(2, 0, 36);
@@ -145,6 +145,10 @@ body {
   border-radius: 15px;
   width: 655px;
 }
+.itemli {
+  overflow: hidden;
+  grid-area: itemli;
+}
 
 .itemC1 {
   text-align: center;
@@ -186,7 +190,17 @@ body {
   margin-top: 60px;
   grid-area: item2;
 }
+.cursos1 {
+  float: left;
+  margin: auto;
+  margin-right: 20px;
+  padding: auto;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+}
 .cursos {
+  float: left;
   margin: auto;
   padding: auto;
   width: 250px;
