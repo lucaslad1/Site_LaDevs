@@ -120,7 +120,11 @@ body {
   color: white;
   text-decoration: none;
 }
-
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 auto;
+}
 .tool {
   padding-top: 28px;
   width: 50px;

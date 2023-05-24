@@ -121,6 +121,11 @@ body {
   cursor: pointer;
   margin-bottom: 20px;
 }
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 auto;
+}
 h3 {
   margin-top: 20px;
 }

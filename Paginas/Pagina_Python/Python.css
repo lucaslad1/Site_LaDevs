@@ -137,6 +137,11 @@ h3 {
   grid-area: item1;
   cursor: default;
 }
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 auto;
+}
 .img1 {
   width: 400px;
 }
