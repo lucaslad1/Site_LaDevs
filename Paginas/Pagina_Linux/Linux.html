@@ -112,8 +112,10 @@
             <br />
             <li><strong>mkdir</strong>: cria um novo diretório.</li>
             <br />
-            <li><strong>rm</strong>: remove arquivos e diretórios.</li>
+            <li><strong>rmdir</strong>: remove arquivos e diretórios.</li>
             <br />
+            <li><strong>rm</strong>: remove arquivos e diretórios.</li>
+            <br>
             <li>
               <strong>sudo</strong>: executa um comando como superusuário.
             </li>
@@ -348,6 +350,7 @@
         <p>
           O uso mais comum do comando <strong>mv</strong> é mover arquivos, mas ele também pode ser usado para renomear arquivos.        <br />
         <p>
+        <br>
           Basta digitar <strong>mv</strong> seguido do nome do arquivo e do diretório de destino. Por exemplo, você deseja mover o arquivo <strong>nomedoarquivo.txt</strong> para o diretório <strong>/home/username/Documents</strong>:        
         </p>
         <p><strong>mv nomedoarquivo.txt /home/username/Documents</strong></p>
@@ -382,6 +385,7 @@
         <br>
         <br>
         <p>O comando <strong>mkdir</strong> aceita muitas opções, como:</p>
+        <br>
         <div class="explicacao">
           <ul>
             <li>
@@ -411,7 +415,29 @@
         <br />
 
 
-        <h3>8. Comando rm</h3>
+        <h3>8. Comando rmdir</h3>
+        <br />
+        <br />
+        <p>
+          Para excluir permanentemente um diretório vazio, use o comando <strong>rmdir</strong>. Lembre-se de que o usuário que executa esse comando deve ter privilégios <strong>sudo</strong> no diretório pai.        <br />
+        <p>
+          <br>
+          Por exemplo, você deseja remover um subdiretório vazio chamado <strong>personal1</strong> e sua pasta principal <strong>mydir</strong>:
+        <p>
+        <strong>rmdir -p mydir/personal1</strong>:
+        </p>
+        
+        
+
+          
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>9. Comando rm</h3>
         <br />
         <br />
         <p>
@@ -449,6 +475,57 @@
             <li>
               <p>
                 <strong>-v</strong> imprime uma mensagem para cada diretório criado.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <br />
+        <br />
+        <hr />
+        <br />
+
+
+
+        <h3>10. Comando sudo</h3>
+        <br />
+        <br />
+        <p>
+          Correspondente a <strong>SuperUser Do</strong>, <strong>sudo</strong> é um dos comandos básicos mais populares do Linux. Ele permite executar tarefas que exigem permissões administrativas ou de root.        <br />
+        <p>
+          <br>
+          Ao usar o sudo, o sistema solicitará que os usuários se autentiquem com uma senha. Em seguida, o sistema Linux registrará um registro de data e hora como um rastreador. Por padrão, todo usuário root pode executar comandos sudo por <strong>15 minutos/sessão</strong>.       
+        <br>
+        <br>
+        <p>Se você tentar executar o sudo na linha de comando sem se autenticar, o sistema registrará a atividade como um evento de segurança.</p>
+        <br>
+    
+        <p>Aqui está a sintaxe geral:</p>
+        <p>
+        <strong>sudo [comando]</strong>:
+        </p>
+        <br />
+    
+        <p>Você também pode adicionar uma opção, por exemplo:</p>
+        <br>
+
+        <div class="explicacao">
+          <ul>
+            <li>
+              <p>
+                <p><strong>-k</strong> ou <strong>–reset-timestamp</strong> invalida o arquivo de registro de data e hora.</p>
+              </p>
+            </li>
+            <br />
+            <li>
+                <p><strong>-g</strong> ou <strong>–group=group</strong> executa comandos como um nome ou ID de grupo especificado.</p>
+            </li>
+            <br />
+            <li>
+              <p>
+               <strong>-h</strong> ou <strong>–host=host</strong> executa comandos no host.
               </p>
             </li>
           </ul>
