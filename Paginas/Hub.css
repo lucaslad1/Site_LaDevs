@@ -1,4 +1,3 @@
-
 body {
   padding-top: 80px;
   background: linear-gradient(
@@ -65,8 +64,8 @@ p {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     211deg,
-    rgba(2, 0, 36, 0.4206932773109243) 0%,
-    rgba(2, 0, 36, 1) 100%
+    rgba(2, 0, 36, 0.4206932773109243) 20%,
+    rgba(2, 0, 36, 1) 80%
   );
 }
 .itemImg {
