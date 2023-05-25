@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(2, 0, 36, 1) 11%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  color: white;
+}
+.logo {
+  display: flex;
+  font-family: cursive;
+  color: white;
+  text-decoration: none;
+}
+.buttonHeader {
+  margin-right: 8px;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.buttonMain {
+  margin-right: 8px;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.ladevs {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 55px;
+}
+.buttonHeader:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: rgb(2, 0, 36);
+  border-color: transparent !important;
+  scale: 1.1;
+}
+.Suporte {
+  margin-right: 8px !important;
+  font-size: 15px !important;
+  padding: 7px 10px !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  border-color: rgb(0, 255, 251) !important;
+  color: rgb(0, 229, 255) !important;
+  cursor: pointer !important;
+}
+.Suporte:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 255, 251) !important;
+  color: rgb(2, 0, 36) !important;
+  border-color: transparent !important;
+  scale: 1.1;
+}
+
+.buttons input {
+  border-radius: 20px;
+  padding: 1vh;
+  background-color: rgba(0, 213, 255, 0.367);
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+}
+
+.buttons input::placeholder {
+  color: rgba(255, 255, 255, 0.652);
+}
+
+.Busca {
+  color: white;
+  border-width: 1px;
+  margin-right: 6px;
+  background-color: transparent;
+  border-style: inset;
+}
+.imgPerfil {
+  background-color: black;
+  width: 15px;
+}
+
+.itemC1:hover,
+.itemC2:hover,
+.itemC3:hover,
+.itemC4:hover {
+  scale: 1.1;
+}
+
+.itemli a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.header a {
+  text-decoration: none;
+}
